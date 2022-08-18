@@ -9,13 +9,11 @@ public class Calc {
                 String line = input.nextLine();
                 String[] operator = line.split(" ");
                 if (operator.length != 3)
-//                    throw new Exception("Количество символов не соответствует условию");
                     throw new Exception();
                 if (Arabic(operator[0]) && Arabic(operator[2])) {
                     int a = Integer.parseInt(operator[0]);
                     int b = Integer.parseInt(operator[2]);
                     if (a < 0 || a > 10 || b < 0 || b > 10)
-//                        throw new Exception("Переменные выходят за пределы условия");
                         throw new Exception();
                     switch (operator[1]) {
                         case "+": {
@@ -39,8 +37,6 @@ public class Calc {
                             break;
                         }
                         default: {
-//                            System.out.println("Output:");
-//                            System.out.println("Неверный символ операции, разрешено: +,-,/,*");
                             throw new Exception();
                         }
                     }
@@ -49,7 +45,6 @@ public class Calc {
                     int b = RomanToArabic(operator[2]);
                     int x;
                     if (a < 0 || a > 10 || b < 0 || b > 10)
- //                       throw new Exception("Переменные выходят за пределы условия");
                         throw new Exception();
                     switch (operator[1]) {
                         case "+": {
@@ -79,13 +74,9 @@ public class Calc {
                     }
                 }
                 else {
-//                    throw new Exception("Переменные не соответствуют требованиям условия");
                     throw new Exception();
                 }
             } catch (Exception e) {
-          //      System.out.println("Output:");
-           //     System.out.println(a.getMessage());
-          //      break;
                 throw new Exception(e);
             }
         }
