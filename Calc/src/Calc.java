@@ -120,7 +120,7 @@ public class Calc {
             if (x.equals(arabic[i]))
                 return roman[i];
         }
-        return " ";
+        throw new Exception();
     }
 }
 
