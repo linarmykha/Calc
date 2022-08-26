@@ -121,6 +121,7 @@ public class Calc {
                 return roman[i];
         }
         throw new Exception();
+        //Линар
     }
 }
 
